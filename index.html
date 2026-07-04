@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Primary SEO Meta Tags -->
     <title>Muskaan Jain | Embedded Firmware Engineer Portfolio</title>
     <meta name="title" content="Muskaan Jain | Embedded Firmware Engineer">
     <meta name="description"
@@ -14,6 +15,7 @@
     <meta name="author" content="Muskaan Jain">
     <meta name="robots" content="index, follow">
 
+    <!-- Open Graph / Facebook / LinkedIn (Controls Link Previews) -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://MuskaanJain2021.github.io/">
     <meta property="og:title" content="Muskaan Jain | Embedded Firmware Engineer">
@@ -22,6 +24,7 @@
     <meta property="og:image"
         content="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=1200&h=630&fit=crop">
 
+    <!-- Twitter Link Previews -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://MuskaanJain2021.github.io/">
     <meta property="twitter:title" content="Muskaan Jain | Embedded Firmware Engineer">
@@ -30,11 +33,32 @@
     <meta property="twitter:image"
         content="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?q=80&w=1200&h=630&fit=crop">
 
+    <!-- Tailwind CSS Engine -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS Injection for Smooth Grid Transitions -->
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.98);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .animate-fadeIn {
+            animation: fadeIn 0.25s ease-out forwards;
+        }
+    </style>
 </head>
 
 <body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-teal-500 selection:text-slate-900">
 
+    <!-- Header / Navigation -->
     <header class="sticky top-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-slate-800/80">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
             <a href="#" class="text-xl font-bold tracking-wider text-teal-400 self-center md:self-auto">MUSKAAN JAIN</a>
@@ -52,6 +76,7 @@
         </div>
     </header>
 
+    <!-- Hero Section -->
     <section id="about"
         class="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-20 md:py-32 min-h-[calc(100vh-80px)] flex flex-col justify-center">
         <p class="text-teal-400 font-mono mb-2 text-sm tracking-widest">Hi, my name is</p>
@@ -90,6 +115,7 @@
 
     <hr class="border-slate-800 max-w-5xl mx-auto px-4 sm:px-6">
 
+    <!-- Technical Skills Section -->
     <section id="skills" class="max-w-5xl mx-auto px-4 sm:px-6 py-16 md:py-20">
         <h2 class="text-xl sm:text-2xl font-bold text-slate-200 mb-8 md:mb-12 flex items-center gap-2">
             <span class="text-teal-400 font-mono text-lg md:text-xl">01.</span> Technical Toolbox
@@ -97,44 +123,49 @@
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
             <div class="bg-slate-800/40 p-5 md:p-6 rounded-lg border border-slate-800/80">
                 <h3 class="text-teal-400 font-semibold mb-2 text-base">Languages & Architecture</h3>
-                <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">Embedded C, C, C++ (OOP), Defensive
-                    Programming, Modular Driver Design, State-Machines.</p>
+                <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">Embedded C, C, C++ (OOP Fundamentals,
+                    Structure Design), Defensive Programming, Modular Driver Design, State-Machine Driver Architecture.
+                </p>
             </div>
             <div class="bg-slate-800/40 p-5 md:p-6 rounded-lg border border-slate-800/80">
                 <h3 class="text-teal-400 font-semibold mb-2 text-base">RTOS Internals</h3>
-                <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">FreeRTOS, Zephyr RTOS, Preemptive
-                    Scheduling, Semaphores, Mutexes, Message Queues, ISR Deferral.</p>
+                <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">FreeRTOS, Zephyr RTOS, Bare-Metal Register
+                    Programming, Context-Switching, Mutexes, Semaphores, Message Queues, ISR Deferred Processing.</p>
             </div>
             <div class="bg-slate-800/40 p-5 md:p-6 rounded-lg border border-slate-800/80">
                 <h3 class="text-teal-400 font-semibold mb-2 text-base">Hardware Silicons</h3>
-                <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">STM32F407 (ARM Cortex-M4), ESP32 Dual-Core
-                    (ESP-IDF), NVIC, DMA Controllers, Timers/Watchdogs.</p>
+                <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">STM32F407VGT6 (ARM Cortex-M4 with FPU),
+                    ESP32 Dual-Core (ESP-IDF framework), Core RCC/PLL Tree, NVIC, DMA Controllers, Timers.</p>
             </div>
             <div class="bg-slate-800/40 p-5 md:p-6 rounded-lg border border-slate-800/80">
                 <h3 class="text-teal-400 font-semibold mb-2 text-base">Protocols & Storage</h3>
-                <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">SPI (DMA, Multi-Slave), I2C, UART (Circular
-                    Ring Buffers), W25Q64FV Flash, LittleFS, NVS Backends.</p>
+                <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">SPI (DMA and Multi-Slave Configurations),
+                    I2C, UART (Interrupt Circular Ring Buffers), W25Q64FV Flash, LittleFS, NVS Backends.</p>
             </div>
             <div class="bg-slate-800/40 p-5 md:p-6 rounded-lg border border-slate-800/80">
                 <h3 class="text-teal-400 font-semibold mb-2 text-base">Wireless Infrastructure</h3>
-                <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">ESP32 Wi-Fi Controller, SoftAP
-                    Provisioning, Captive Portals, RSSI Diagnostics, Auto-Reconnect Tracking.</p>
+                <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">ESP32 Wi-Fi Protocol Controller, SoftAP
+                    Provisioning Engine, Captive Portal Routing Infrastructure, RSSI Degradation Diagnostics,
+                    Auto-Reconnect.</p>
             </div>
             <div class="bg-slate-800/40 p-5 md:p-6 rounded-lg border border-slate-800/80">
                 <h3 class="text-teal-400 font-semibold mb-2 text-base">Lab Instrumentation</h3>
                 <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">Digital Storage Oscilloscopes (DSO), Logic
-                    Analyzers, JTAG/SWD, GDB, OpenOCD, Hard Fault Analysis.</p>
+                    Analyzers (Microsecond-Level Profiling), SWD, JTAG, GDB Execution, OpenOCD Daemons, Hard Fault
+                    Analysis.</p>
             </div>
         </div>
     </section>
 
     <hr class="border-slate-800 max-w-5xl mx-auto px-4 sm:px-6">
 
+    <!-- Experience Section -->
     <section id="experience" class="max-w-5xl mx-auto px-4 sm:px-6 py-16 md:py-20">
         <h2 class="text-xl sm:text-2xl font-bold text-slate-200 mb-8 md:mb-12 flex items-center gap-2">
             <span class="text-teal-400 font-mono text-lg md:text-xl">02.</span> Where I've Worked
         </h2>
         <div class="space-y-10 md:space-y-12">
+            <!-- Job 1 -->
             <div class="border-l-2 border-teal-500/30 pl-4 sm:pl-6 relative">
                 <div class="absolute w-3 h-3 bg-teal-400 rounded-full -left-[7px] top-1.5"></div>
                 <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2 gap-1">
@@ -148,20 +179,21 @@
                 <p class="text-xs text-slate-500 mb-4 font-mono">Gurugram, India</p>
                 <ul class="space-y-2 text-slate-400 text-xs sm:text-sm list-none">
                     <li class="flex items-start gap-2"><span class="text-teal-400 mt-1">▪</span><span>Achieved hardware
-                            bring-up and calibration for STPM3x energy metering ICs with dual-core ESP32 modules using
-                            raw ESP-IDF.</span></li>
-                    <li class="flex items-start gap-2"><span class="text-teal-400 mt-1">▪</span><span>Designed modular
-                            SPI master drivers implementing continuous register polling, strict CRC8 math validation,
-                            and precise CS assertions.</span></li>
-                    <li class="flex items-start gap-2"><span class="text-teal-400 mt-1">▪</span><span>Validated
-                            microsecond-level hardware DSP clock synchronization parameters via multi-channel logic
-                            analyzers.</span></li>
+                            bring-up and calibration for STPM3x high-accuracy energy metering ICs with dual-core ESP32
+                            modules using raw ESP-IDF.</span></li>
+                    <li class="flex items-start gap-2"><span class="text-teal-400 mt-1">▪</span><span>Designed a modular
+                            SPI master driver implementing continuous register polling, strict CRC8 math validation
+                            loops, and precise Chip-Select assertions.</span></li>
+                    <li class="flex items-start gap-2"><span class="text-teal-400 mt-1">▪</span><span>Analyzed strict
+                            microsecond-level hardware DSP clock synchronization parameters via multi-channel digital
+                            logic analyzer captures.</span></li>
                     <li class="flex items-start gap-2"><span class="text-teal-400 mt-1">▪</span><span>Engineered math
-                            translation layers to calculate real-time root-mean-square voltage, current, and power
-                            expressions.</span></li>
+                            translation layers to calculate real-time root-mean-square voltage, current, and
+                            active/reactive power expressions.</span></li>
                 </ul>
             </div>
 
+            <!-- Job 2 -->
             <div class="border-l-2 border-teal-500/30 pl-4 sm:pl-6 relative">
                 <div class="absolute w-3 h-3 bg-slate-700 rounded-full -left-[7px] top-1.5"></div>
                 <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-2 gap-1">
@@ -175,11 +207,11 @@
                 <p class="text-xs text-slate-500 mb-4 font-mono">Bangalore, India</p>
                 <ul class="space-y-2 text-slate-400 text-xs sm:text-sm list-none">
                     <li class="flex items-start gap-2"><span class="text-teal-400 mt-1">▪</span><span>Built modular,
-                            reusable driver files in Embedded C to power connected smart home lighting and IoT products
-                            based on ESP8266 systems.</span></li>
+                            reusable driver files in Embedded C to power connected smart home lighting and
+                            high-availability IoT products based on ESP8266/NodeMCU systems.</span></li>
                     <li class="flex items-start gap-2"><span class="text-teal-400 mt-1">▪</span><span>Wrote optimized,
-                            timing-stringent addressable WS2812B LED array data lines using custom assembly
-                            bit-banging.</span></li>
+                            timing-stringent addressable WS2812B LED array data lines by implementing custom
+                            assembly-level bit-banging.</span></li>
                     <li class="flex items-start gap-2"><span class="text-teal-400 mt-1">▪</span><span>Embedded localized
                             RF remote-control decoding ISR routines into firmware processing loops.</span></li>
                 </ul>
@@ -189,74 +221,108 @@
 
     <hr class="border-slate-800 max-w-5xl mx-auto px-4 sm:px-6">
 
+    <!-- Interactive Projects Section -->
     <section id="projects" class="max-w-5xl mx-auto px-4 sm:px-6 py-16 md:py-20">
-        <h2 class="text-xl sm:text-2xl font-bold text-slate-200 mb-8 md:mb-12 flex items-center gap-2">
+        <h2 class="text-xl sm:text-2xl font-bold text-slate-200 mb-6 flex items-center gap-2">
             <span class="text-teal-400 font-mono text-lg md:text-xl">03.</span> Engineering Projects
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
-            <div
-                class="bg-slate-800/20 border border-slate-800 p-5 md:p-6 rounded-lg flex flex-col justify-between hover:border-teal-500/40 transition duration-300">
-                <div class="mb-4">
-                    <h3 class="text-base sm:text-lg font-bold text-slate-200 mb-2 hover:text-teal-400 transition">ESP32
-                        FreeRTOS Wi-Fi & Diagnostics Framework</h3>
-                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                        An asynchronous, event-driven framework featuring semaphore-based sync, queue-based message
-                        piping for real-time RF scanning logs, and fail-safe OTA image updates backed by NVS storage.
-                    </p>
-                </div>
-                <div class="flex flex-wrap gap-2 text-[10px] sm:text-xs font-mono text-teal-400/80">
-                    <span class="bg-slate-800 px-2 py-0.5 rounded">ESP32</span> <span
-                        class="bg-slate-800 px-2 py-0.5 rounded">ESP-IDF</span> <span
-                        class="bg-slate-800 px-2 py-0.5 rounded">FreeRTOS</span> <span
-                        class="bg-slate-800 px-2 py-0.5 rounded">LittleFS</span>
-                </div>
-            </div>
 
-            <div
-                class="bg-slate-800/20 border border-slate-800 p-5 md:p-6 rounded-lg flex flex-col justify-between hover:border-teal-500/40 transition duration-300">
-                <div class="mb-4">
-                    <h3 class="text-base sm:text-lg font-bold text-slate-200 mb-2 hover:text-teal-400 transition">Zephyr
-                        RTOS Data Pipeline Framework</h3>
-                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                        A real-time sensor logging platform optimizing thread-safe mutual exclusion logic during
-                        multi-threaded data generation. Implements page-boundary-safe external flash writing using
-                        circular DMA channels.
-                    </p>
-                </div>
-                <div class="flex flex-wrap gap-2 text-[10px] sm:text-xs font-mono text-teal-400/80">
-                    <span class="bg-slate-800 px-2 py-0.5 rounded">STM32F407</span> <span
-                        class="bg-slate-800 px-2 py-0.5 rounded">Zephyr RTOS</span> <span
-                        class="bg-slate-800 px-2 py-0.5 rounded">SPI DMA</span> <span
-                        class="bg-slate-800 px-2 py-0.5 rounded">BMP280</span>
-                </div>
-            </div>
+        <!-- Filter Tabs Container -->
+        <div id="filter-buttons" class="flex flex-wrap gap-2 mb-8">
+            <!-- Buttons dynamically injected by JS -->
+        </div>
 
-            <div
-                class="bg-slate-800/20 border border-slate-800 p-5 md:p-6 rounded-lg flex flex-col justify-between hover:border-teal-500/40 transition duration-300 md:col-span-2">
-                <div class="mb-4">
-                    <h3 class="text-base sm:text-lg font-bold text-slate-200 mb-2 hover:text-teal-400 transition">
-                        STM32F407 + W25Q64FV Persistent Storage Stack</h3>
-                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                        A high-reliability, zero-malloc bare-metal device driver stack featuring sector flash clearing
-                        protection mechanisms, static structures to avoid runtime heap fragmentation, and an
-                        intermediate 4KB cache to mitigate page-wrap memory faults.
-                    </p>
-                </div>
-                <div class="flex flex-wrap gap-2 text-[10px] sm:text-xs font-mono text-teal-400/80">
-                    <span class="bg-slate-800 px-2 py-0.5 rounded">STM32</span> <span
-                        class="bg-slate-800 px-2 py-0.5 rounded">Bare-Metal</span> <span
-                        class="bg-slate-800 px-2 py-0.5 rounded">W25Q64FV Flash</span> <span
-                        class="bg-slate-800 px-2 py-0.5 rounded">LittleFS</span>
-                </div>
-            </div>
+        <!-- Project Grid -->
+        <div id="project-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 transition-all duration-300">
+            <!-- Project cards dynamically injected by JS -->
         </div>
     </section>
 
+    <!-- Footer -->
     <footer class="bg-slate-950 py-8 text-center text-xs font-mono text-slate-500 px-4">
         <p>Designed & Built by Muskaan Jain • 2026</p>
-
+        <p class="mt-1">Hosted on GitHub Pages</p>
     </footer>
 
+    <!-- Interactive Filtering Engine Script -->
+    <script>
+        // Project Database Array
+        const projects = [
+            {
+                title: "ESP32 FreeRTOS Wi-Fi & Diagnostics Framework",
+                description: "Developed an asynchronous, event-driven framework for provisioning execution using the ESP-IDF framework. Implemented semaphore-based synchronization, queue-based task communication streaming logs (RF scans, RSSI margins), hardware watchdogs, captive portals, and fail-safe OTA updates backed by NVS logs.",
+                tags: ["ESP32", "FreeRTOS", "Wireless", "LittleFS"]
+            },
+            {
+                title: "Zephyr RTOS Embedded Data Pipeline Framework",
+                description: "Developing a real-time sensor logging framework on an ARM Cortex-M4 platform. Optimized thread-safe mutual exclusion logic protecting block device storage engines, and implemented page-boundary-safe flash writes using circular DMA channels and interrupt completion callbacks.",
+                tags: ["STM32", "Zephyr RTOS", "Drivers", "SPI DMA"]
+            },
+            {
+                title: "STM32F407 + W25Q64FV Persistent Storage Stack",
+                description: "Created a high-reliability bare-metal device driver stack for W25Q64FV flash chips handling JEDEC extraction and page programming operations. Shielded execution against page-wrap memory overwrites via a 4KB alignment array, completely bypassing malloc using static allocation arrays.",
+                tags: ["STM32", "Bare-Metal", "Storage", "SPI DMA", "LittleFS"]
+            }
+        ];
+
+        let currentFilter = "All";
+
+        // Render Filter Buttons
+        function renderFilters() {
+            const filterContainer = document.getElementById("filter-buttons");
+            const allTags = ["All", ...new Set(projects.flatMap(p => p.tags))];
+
+            filterContainer.innerHTML = allTags.map(tag => {
+                const isActive = currentFilter === tag;
+                const activeClasses = "bg-teal-400 text-slate-900 border-teal-400";
+                const inactiveClasses = "bg-slate-800/60 text-slate-400 border-slate-700 hover:border-teal-400/50 hover:text-teal-400";
+
+                return `
+                    <button onclick="setFilter('${tag}')" class="px-3 py-1.5 rounded font-mono text-xs border transition duration-200 cursor-pointer ${isActive ? activeClasses : inactiveClasses}">
+                        ${tag}
+                    </button>
+                `;
+            }).join("");
+        }
+
+        // Render Project Cards
+        function renderProjects() {
+            const gridContainer = document.getElementById("project-grid");
+            const filteredProjects = currentFilter === "All"
+                ? projects
+                : projects.filter(p => p.tags.includes(currentFilter));
+
+            if (filteredProjects.length === 0) {
+                gridContainer.innerHTML = `<p class="text-slate-500 font-mono text-sm col-span-2 py-8">No matching firmware architectures found.</p>`;
+                return;
+            }
+
+            gridContainer.innerHTML = filteredProjects.map(project => `
+                <div class="bg-slate-800/20 border border-slate-800 p-5 md:p-6 rounded-lg flex flex-col justify-between hover:border-teal-500/40 transition duration-300 transform scale-100 opacity-100 animate-fadeIn">
+                    <div class="mb-4">
+                        <h3 class="text-base sm:text-lg font-bold text-slate-200 mb-2 hover:text-teal-400 transition">${project.title}</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">${project.description}</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-[10px] sm:text-xs font-mono text-teal-400/80">
+                        ${project.tags.map(t => `<span class="bg-slate-800 px-2 py-0.5 rounded">${t}</span>`).join("")}
+                    </div>
+                </div>
+            `).join("");
+        }
+
+        // State Transition Trigger
+        window.setFilter = function (tag) {
+            currentFilter = tag;
+            renderFilters();
+            renderProjects();
+        }
+
+        // App Initialization Bootstrap
+        document.addEventListener("DOMContentLoaded", () => {
+            renderFilters();
+            renderProjects();
+        });
+    </script>
 </body>
 
 </html>
